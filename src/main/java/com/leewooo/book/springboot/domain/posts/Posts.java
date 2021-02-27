@@ -1,5 +1,6 @@
 package com.leewooo.book.springboot.domain.posts;
 
+import com.leewooo.book.springboot.domain.BaseTimeEntity;
 import com.leewooo.book.springboot.web.dto.PostsUpdateRequestDTO;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
